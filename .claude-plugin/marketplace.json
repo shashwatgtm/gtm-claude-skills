@@ -1,13 +1,31 @@
 {
+  "name": "gtm-claude-skills",
+  "owner": {
+    "name": "Shashwat Ghosh",
+    "url": "https://github.com/shashwatgtm"
+  },
   "plugins": [
     {
       "name": "gtm-skills",
-      "description": "3 proprietary B2B GTM frameworks by Shashwat Ghosh: EPIC Motion Diagnostic (GTM motion scoring), IMPACT Quick Positioning (category anchoring + messaging), CRAFT Context Engineering (AI context framework). Zero code, pure strategic reasoning.",
+      "description": "3 proprietary B2B GTM frameworks: EPIC Motion Diagnostic, IMPACT Quick Positioning, CRAFT Context Engineering",
       "skills": [
-        "epic-motion-diagnostic",
-        "impact-quick-positioning",
-        "craft-context-engineering"
-      ]
+        {
+          "name": "epic-motion-diagnostic",
+          "path": "epic-motion-diagnostic"
+        },
+        {
+          "name": "impact-quick-positioning",
+          "path": "impact-quick-positioning"
+        },
+        {
+          "name": "craft-context-engineering",
+          "path": "craft-context-engineering"
+        }
+      ],
+      "source": {
+        "type": "github",
+        "url": "https://github.com/shashwatgtm/gtm-claude-skills"
+      }
     }
   ]
 }

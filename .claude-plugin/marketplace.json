@@ -9,23 +9,10 @@
       "name": "gtm-skills",
       "description": "3 proprietary B2B GTM frameworks: EPIC Motion Diagnostic, IMPACT Quick Positioning, CRAFT Context Engineering",
       "skills": [
-        {
-          "name": "epic-motion-diagnostic",
-          "path": "epic-motion-diagnostic"
-        },
-        {
-          "name": "impact-quick-positioning",
-          "path": "impact-quick-positioning"
-        },
-        {
-          "name": "craft-context-engineering",
-          "path": "craft-context-engineering"
-        }
-      ],
-      "source": {
-        "type": "github",
-        "url": "https://github.com/shashwatgtm/gtm-claude-skills"
-      }
+        "epic-motion-diagnostic",
+        "impact-quick-positioning",
+        "craft-context-engineering"
+      ]
     }
   ]
 }

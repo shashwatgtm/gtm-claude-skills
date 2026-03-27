@@ -7,12 +7,8 @@
   "plugins": [
     {
       "name": "gtm-skills",
-      "description": "3 proprietary B2B GTM frameworks: EPIC Motion Diagnostic, IMPACT Quick Positioning, CRAFT Context Engineering",
-      "skills": [
-        "epic-motion-diagnostic",
-        "impact-quick-positioning",
-        "craft-context-engineering"
-      ]
+      "source": "./plugins/gtm-skills",
+      "description": "3 proprietary B2B GTM frameworks: EPIC Motion Diagnostic, IMPACT Quick Positioning, CRAFT Context Engineering"
     }
   ]
 }

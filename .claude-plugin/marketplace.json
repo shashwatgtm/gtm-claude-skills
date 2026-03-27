@@ -1,0 +1,13 @@
+{
+  "plugins": [
+    {
+      "name": "gtm-skills",
+      "description": "3 proprietary B2B GTM frameworks by Shashwat Ghosh: EPIC Motion Diagnostic (GTM motion scoring), IMPACT Quick Positioning (category anchoring + messaging), CRAFT Context Engineering (AI context framework). Zero code, pure strategic reasoning.",
+      "skills": [
+        "epic-motion-diagnostic",
+        "impact-quick-positioning",
+        "craft-context-engineering"
+      ]
+    }
+  ]
+}

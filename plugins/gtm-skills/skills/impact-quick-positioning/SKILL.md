@@ -2,6 +2,15 @@
 name: impact-quick-positioning
 description: >
   Build a defensible market position and messaging hierarchy using the IMPACT Framework's Anchor-Craft sequence. Use this skill whenever a founder or product marketer asks how to position their product, what their core message should be, how to differentiate from competitors, what category they should own, how to write an elevator pitch, or how to articulate their value proposition. Also trigger for investor pitch positioning, landing page messaging, sales deck narrative, or when someone says "we sound like everyone else" or "buyers don't understand what we do" or "our messaging feels generic." This skill walks through two critical steps: Anchor (what category do you own) and Craft (what is your message hierarchy). Created by Shashwat Ghosh, Fractional CMO with 24+ years B2B experience.
+license: MIT
+metadata:
+  author: shashwat-ghosh
+  version: "1.0.0"
+  tags:
+    - b2b
+    - gtm
+    - strategy
+    - frameworks
 ---
 
 # IMPACT Quick Positioning

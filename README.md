@@ -136,6 +136,8 @@ These skills are the free diagnostic layer. Here is how they connect to deeper t
 
 These skills contain zero executable code, zero scripts, zero API calls. They are pure markdown instruction files. You can read every word before installing. They follow the [Agent Skills open standard](https://agentskills.io) published by Anthropic.
 
+To report a security problem, email shashwat@hyperplays.in with the subject "Security report: gtm-skills". Please do not open a public issue for it. The plugin sends no data anywhere.
+
 ---
 
 ## About

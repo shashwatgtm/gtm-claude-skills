@@ -8,7 +8,7 @@ Created by [Shashwat Ghosh](https://www.linkedin.com/in/shashwatghosh-ai-b2b-gtm
 
 ## Why These Skills?
 
-There are 17 official Anthropic skills. None cover GTM strategy.
+EPIC, IMPACT and CRAFT are Shashwat Ghosh's original frameworks; they are not part of Claude's built-in skills.
 
 The community marketplaces have generic GTM skills, but [Anthropic explicitly recommends](https://support.claude.com/en/articles/12512176-what-are-skills) using skills only from trusted sources. These 3 skills are built on original frameworks by a practitioner with verified results at companies that got acquired. They contain zero executable code. Pure strategic reasoning you can audit in 5 minutes.
 

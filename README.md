@@ -2,6 +2,8 @@
 
 **3 original B2B go-to-market frameworks for Claude.** Diagnose your GTM motion, position your product, and structure every AI interaction for boardroom-grade outputs.
 
+Plugin page with install steps for Claude Code and Cowork, and real example outputs from each skill: https://tools.gtmhelix.com/plugins/gtm-skills/
+
 Created by [Shashwat Ghosh](https://www.linkedin.com/in/shashwatghosh-ai-b2b-gtm-fractionalcmo/), Fractional CMO with 24+ years in B2B. Former VP Marketing at Happay (2x exit: CRED, MakeMyTrip) and VP Global Performance Marketing at Locus (acquired by Ingka Group/IKEA).
 
 ---

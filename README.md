@@ -2,7 +2,7 @@
 
 **3 original B2B go-to-market frameworks for Claude.** Diagnose your GTM motion, position your product, and structure every AI interaction for boardroom-grade outputs.
 
-Created by [Shashwat Ghosh](https://www.linkedin.com/in/shashwatghosh-ai-b2b-gtm-fractionalcmo/), Fractional CMO with 24+ years B2B experience. Former VP Marketing at Happay (2x exit: CRED, MakeMyTrip) and Locus (acquired by Ingka Group/IKEA).
+Created by [Shashwat Ghosh](https://www.linkedin.com/in/shashwatghosh-ai-b2b-gtm-fractionalcmo/), Fractional CMO with 24+ years in B2B. Former VP Marketing at Happay (2x exit: CRED, MakeMyTrip) and VP Global Performance Marketing at Locus (acquired by Ingka Group/IKEA).
 
 ---
 
@@ -142,7 +142,7 @@ To report a security problem, email shashwat@hyperplays.in with the subject "Sec
 
 ## About
 
-Shashwat Ghosh is a Fractional CMO and GTM Expert with 24+ years of B2B marketing experience. Creator of the EPIC, IMPACT, and CRAFT frameworks. Top 30 PLG Creator Worldwide (Favikon). Former VP Marketing at Happay and Locus.
+Shashwat Ghosh is a Fractional CMO and GTM Expert with 24+ years in B2B. Creator of the EPIC, IMPACT, and CRAFT frameworks. LinkedIn Top Product Marketing Voice, #10 India and #52 Worldwide (2024). Former VP Marketing at Happay and VP Global Performance Marketing at Locus.
 
 - LinkedIn: [linkedin.com/in/shashwatghosh-ai-b2b-gtm-fractionalcmo](https://www.linkedin.com/in/shashwatghosh-ai-b2b-gtm-fractionalcmo/)
 - Website: [gtmexpert.com](https://www.gtmexpert.com)

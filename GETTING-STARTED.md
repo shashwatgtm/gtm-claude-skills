@@ -10,9 +10,9 @@ You should see: Scores for all 4 motions (E/P/I/C), a recommended lead motion, M
 
 ### Test 2: IMPACT Quick Positioning
 
-"We sell procurement automation to mid-market manufacturers in India. We keep losing to Coupa in competitive deals. Buyers say we sound like everyone else. Help me position."
+"We sell procurement automation to mid-market manufacturers in India. We keep losing to ExampleCo (a larger procurement suite) in competitive deals. Buyers say we sound like everyone else. Help me position."
 
-You should see: Anchor Market analysis (sub-category vs. category vs. new category), a 4-level messaging hierarchy (core message, elevator pitch, full narrative, detailed story), and buyer language over internal language.
+You should see: Anchor Market analysis (sub-category vs. category vs. new category), a 3-level messaging hierarchy (core message, elevator pitch, full narrative), and buyer language over internal language.
 
 ### Test 3: CRAFT Context Engineering
 

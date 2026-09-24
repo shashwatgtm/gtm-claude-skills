@@ -1,6 +1,6 @@
 # GTM Claude Skills Pack
 
-**3 proprietary B2B go-to-market frameworks for Claude.** Diagnose your GTM motion, position your product, and structure every AI interaction for boardroom-grade outputs.
+**3 original B2B go-to-market frameworks for Claude.** Diagnose your GTM motion, position your product, and structure every AI interaction for boardroom-grade outputs.
 
 Created by [Shashwat Ghosh](https://www.linkedin.com/in/shashwatghosh-ai-b2b-gtm-fractionalcmo/), Fractional CMO with 24+ years B2B experience. Former VP Marketing at Happay (2x exit: CRED, MakeMyTrip) and Locus (acquired by Ingka Group/IKEA).
 
@@ -10,7 +10,7 @@ Created by [Shashwat Ghosh](https://www.linkedin.com/in/shashwatghosh-ai-b2b-gtm
 
 There are 17 official Anthropic skills. None cover GTM strategy.
 
-The community marketplaces have generic GTM skills, but [Anthropic explicitly recommends](https://support.claude.com/en/articles/12512176-what-are-skills) using skills only from trusted sources. These 3 skills are built on proprietary frameworks by a practitioner with verified results at companies that got acquired. They contain zero executable code. Pure strategic reasoning you can audit in 5 minutes.
+The community marketplaces have generic GTM skills, but [Anthropic explicitly recommends](https://support.claude.com/en/articles/12512176-what-are-skills) using skills only from trusted sources. These 3 skills are built on original frameworks by a practitioner with verified results at companies that got acquired. They contain zero executable code. Pure strategic reasoning you can audit in 5 minutes.
 
 ---
 
@@ -66,12 +66,11 @@ CRAFT structures the AI      →  "Here is how to brief Claude on any GTM task g
 
 ### Option B: Claude Code (for developers)
 
-```bash
-# Clone the repo
-git clone https://github.com/shashwatgtm/gtm-claude-skills.git
+Install it as a plugin, so the skills and their shared reference files stay together:
 
-# Copy to your Claude Code skills directory
-cp -r gtm-claude-skills/* ~/.claude/skills/
+```
+/plugin marketplace add shashwatgtm/gtm-claude-skills
+/plugin install gtm-skills@gtm-claude-skills
 ```
 
 ### Option C: Copy-paste (zero installation)
@@ -152,4 +151,6 @@ Shashwat Ghosh is a Fractional CMO and GTM Expert with 24+ years of B2B marketin
 
 ## License
 
-These skills are provided for personal and organizational use. The EPIC, IMPACT, and CRAFT frameworks are proprietary IP of Shashwat Ghosh / Helix GTM Consulting. Attribution required for any derivative work.
+Released under the MIT License. See [LICENSE](LICENSE) for the full terms. Copyright (c) 2026 Shashwat Ghosh / Helix GTM Consulting.
+
+The EPIC, IMPACT, and CRAFT frameworks were created by Shashwat Ghosh / Helix GTM Consulting. As the MIT License requires, keep the copyright notice and permission notice in all copies or substantial portions of these skills. The shared operating principles in `plugins/gtm-skills/references/operating-principles.md` are adapted from the operating principles co-authored by Optise and Helix GTM Consulting.

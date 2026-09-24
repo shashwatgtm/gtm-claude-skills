@@ -1,24 +1,20 @@
 ---
 name: craft-context-engineering
 description: >
-  Structure any AI prompt using the CRAFT Framework for consistently high-quality outputs. Use this skill whenever someone asks how to write better prompts, how to get more useful AI outputs, how to structure instructions for AI, why their prompts give generic results, how to do context engineering, or how to use AI for business tasks like GTM strategy, content creation, competitive analysis, or sales enablement. Also trigger when someone says "Claude gave me generic output" or "the AI response was not useful" or "how do I get better results from AI" or when they paste a prompt that is clearly missing context. This skill teaches the CRAFT meta-framework: Character, Result, Artifact, Frame, Timeline. It turns AI from a generic chatbot into a domain-specific strategist. Created by Shashwat Ghosh, Fractional CMO with 24+ years B2B experience.
+  Structure an AI prompt using the CRAFT Framework for consistently high-quality outputs. Use this skill when someone asks how to write better prompts, how to get more useful AI outputs, how to structure instructions for AI, why their prompts give generic results, how to do context engineering, or how to brief AI for business tasks like GTM strategy, content creation, competitive analysis, or sales enablement. Also use it when someone says "Claude gave me generic output" or "the AI response was not useful" or "how do I get better results from AI", or when they share a prompt and ask why it fell short or how to improve it. It helps write and audit prompts; it does not do the business task itself. This skill teaches the CRAFT meta-framework: Character, Result, Artifact, Frame, Timeline. Created by Shashwat Ghosh, Fractional CMO with 24+ years B2B experience.
 license: MIT
 metadata:
   author: shashwat-ghosh
   version: "1.0.0"
-  tags:
-    - b2b
-    - gtm
-    - strategy
-    - frameworks
+  tags: "b2b, gtm, strategy, frameworks"
 ---
 
 
 ## Section 0 — Operating Principles (MANDATORY — read before any workflow step)
 
-This skill operates under TWO mandatory reference files that together define all operating rules. **Read both files first**, before executing any workflow step in this SKILL.md. The rules in both files are non-negotiable and override any conflicting instruction in this SKILL.md body.
+This skill operates under TWO mandatory reference files that together define all operating rules. **Read both files first**, before executing any workflow step in this SKILL.md. The rules in both files take precedence over any conflicting instruction in this SKILL.md body. The user's explicit instruction still wins after a short warning, except for genuinely harmful output (see "Precedence" in `operating-principles.md`).
 
-1. **`../../references/operating-principles.md`** — the shared core: 7 universal rules (rigor, challenge-assumptions, no-harmful-output, fact-check with 4-tier source hierarchy, no-LLMisms, HILT discipline with Question Budget, zero-assumption flagging) that apply to every skill in this plugin and every plugin using this pattern. This file is byte-identical across all plugins that use the shared-core pattern.
+1. **`../../references/operating-principles.md`** — the shared core: 7 universal rules (rigor, challenge-assumptions, no-harmful-output, fact-check with 4-tier source hierarchy, no-LLMisms, HILT discipline with Question Budget, zero-assumption flagging) that apply to every skill in this plugin and every plugin using this pattern. This copy is adapted for this plugin from the shared core co-authored by Optise and Helix GTM Consulting.
 
 2. **`../../references/plugin-specific-rules.md`** — the plugin-specific tail: additional operational rules tailored to the skills in THIS plugin. Read this file AFTER the shared core, not instead of it. If this plugin currently has no plugin-specific rules, the file will be a stub explaining the architecture.
 
@@ -27,16 +23,16 @@ This skill operates under TWO mandatory reference files that together define all
 These are the highest-frequency rules from the two files above. Reading the full files is still mandatory — these reminders are a quick-reference, not a substitute.
 
 - **Web search and web fetch ARE available** in Claude Code's default toolset. "I don't have web access" is never a valid excuse to skip verification of a specific factual claim.
-- **English-only at v1** — never generate prompts, copy, headings, or client-facing text in non-English languages (German, French, Dutch, Spanish, Italian, Portuguese, Polish, etc.), even on explicit user request. This is a hard block, not a confirmation gate. Refuse the request and explain that multilingual may ship in v2 with native-speaker review.
+- **Language:** write in English by default. If the user explicitly asks for another language, write in that language and add a one-line note that these skills were written and tested in English, so a native speaker should review the text before it is used.
 - **4-tier source hierarchy applies to all factual claims.** Tier 1: official primary sources (press releases, Crunchbase, Wikipedia, SEC filings). Tier 2: reputable analyst firms (Gartner, Forrester, IDC, G2, Capterra, GigaOm, SoftwareReviews). Tier 3: reputable business and trade press (WSJ, FT, Reuters, Bloomberg, HBR, TechCrunch, named-VC content, named-founder blogs). Tier 4: NEVER cite (random blogs, anonymous posts, AI-generated comparison sites, Forbes Contributor, paid placements). If only Tier 4 sources are available, the claim is unverified and MUST be flagged.
 - **Verify competitor relationships** via the 4-step search protocol in Rule 4 before building ANY competitor-targeted page or content. Run: `"[user] acquired [competitor]"`, `"[competitor] acquired by"`, `"[competitor] Crunchbase acquisition"`, `"[user] vs [competitor]"`. Any positive ownership hit is a HARD STOP — invoke Rule 3's no-harmful-output protection.
-- **Auto-verify URLs** via `web_fetch` before marking them `[EXISTS]`. Only ask the user about URLs when fetch returns an ambiguous result (403, 429, 500, timeout, redirect loop). Do not ask the user about every URL; that is endless interrogation, not verification.
+- **Auto-verify URLs** via `web_fetch` before citing them as a source or telling the user to act on them. Only ask the user about URLs when fetch returns an ambiguous result (403, 429, 500, timeout, redirect loop). Do not ask the user about every URL; that is endless interrogation, not verification.
 - **Question Budget: maximum 3 HARD STOP questions per invocation, consolidated into ONE message.** Never run an endless Q&A sequence. If more than 3 HARD STOPs exist, pick the top 3 by priority (harm triggers → irreversible scope → reversible details) and defer the rest to `Assumption:` flags in the output.
 - **Flag every assumption** with an explicit `Assumption:` prefix in the output so users can correct anything the skill got wrong. Use the `[User to add: <description>]` placeholder convention for any field where the user must supply specific information.
 
 ### Conflict resolution
 
-If a domain rule in Section 7 of this SKILL.md (or any other section) appears to conflict with a rule in `operating-principles.md` or `plugin-specific-rules.md`, the operating principles win. Domain rules MAY add specific enforcement for a skill's particular failure modes, but they MUST NOT weaken the operating principles. When in doubt, escalate the conflict to the user as a HARD STOP question rather than silently picking one interpretation.
+If a domain rule in the Anti-Hallucination Rules section of this SKILL.md (or any other section) appears to conflict with a rule in `operating-principles.md` or `plugin-specific-rules.md`, the operating principles win. Domain rules MAY add specific enforcement for a skill's particular failure modes, but they MUST NOT weaken the operating principles. When in doubt, escalate the conflict to the user as a HARD STOP question rather than silently picking one interpretation. None of this overrides the user's explicit instruction: give a short warning, then follow it, unless the output would be genuinely harmful under Rule 3.
 
 ---
 
@@ -67,13 +63,13 @@ When a user cannot provide all 5 CRAFT elements (time pressure, early exploratio
 
 ## Trigger Phrases
 
-Activate this skill when you see:
+Typical phrases that signal this skill applies, when the request is about writing or improving a prompt:
 - "how to write better prompts", "prompt engineering", "context engineering"
 - "AI gave me generic output", "Claude response was not useful", "output was too vague"
 - "how to get better results from AI", "how to use AI for business"
 - "how to structure instructions for AI", "how to brief Claude"
 - "CRAFT framework", "context engineering framework"
-- Any prompt that is clearly missing context (single sentence asking for a complex deliverable)
+- A prompt the user shares for review that is clearly missing context (single sentence asking for a complex deliverable)
 
 The difference between a generic AI output and a boardroom-ready deliverable is not the AI model. It is the context you provide. CRAFT is a five-element framework that turns any AI interaction from "hoping for luck" into "engineering success."
 
@@ -143,7 +139,7 @@ The same information presented as a paragraph versus a table versus a slide outl
 1. Start with the end use: Where will this output be used? (board deck, Slack message, sales call, blog post)
 2. Match the format to the audience: Tables for executives, prose for thought leadership, templates for sales reps
 3. Specify structural constraints: Number of sections, word count, inclusion/exclusion of bullet points
-4. Include a reference if possible: "Format it like a McKinsey one-pager" or "Follow the structure of a Y Combinator demo day pitch"
+4. Include a reference if possible: "Format it like a management consulting one-pager" or "Follow the structure of a startup accelerator demo day pitch"
 
 ### F — Frame
 

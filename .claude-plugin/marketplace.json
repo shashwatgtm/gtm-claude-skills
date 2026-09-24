@@ -4,11 +4,13 @@
     "name": "Shashwat Ghosh",
     "url": "https://github.com/shashwatgtm"
   },
+  "description": "Three original B2B go-to-market frameworks by Shashwat Ghosh, Helix GTM Consulting: EPIC, IMPACT and CRAFT.",
   "plugins": [
     {
       "name": "gtm-skills",
       "source": "./plugins/gtm-skills",
-      "description": "3 proprietary B2B GTM frameworks: EPIC Motion Diagnostic, IMPACT Quick Positioning, CRAFT Context Engineering"
+      "license": "MIT",
+      "description": "3 original B2B GTM frameworks: EPIC Motion Diagnostic, IMPACT Quick Positioning, CRAFT Context Engineering"
     }
   ]
 }

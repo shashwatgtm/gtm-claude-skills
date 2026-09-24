@@ -1,24 +1,20 @@
 ---
 name: impact-quick-positioning
 description: >
-  Build a defensible market position and messaging hierarchy using the IMPACT Framework's Anchor-Craft sequence. Use this skill whenever a founder or product marketer asks how to position their product, what their core message should be, how to differentiate from competitors, what category they should own, how to write an elevator pitch, or how to articulate their value proposition. Also trigger for investor pitch positioning, landing page messaging, sales deck narrative, or when someone says "we sound like everyone else" or "buyers don't understand what we do" or "our messaging feels generic." This skill walks through two critical steps: Anchor (what category do you own) and Craft (what is your message hierarchy). Created by Shashwat Ghosh, Fractional CMO with 24+ years B2B experience.
+  Build a defensible market position and messaging hierarchy using the IMPACT Framework's Anchor-Craft sequence. Use this skill when a founder or product marketer asks how to position their product, what their core message should be, how to differentiate from competitors, what category they should own, how to write an elevator pitch, or how to articulate their value proposition. Also use it when positioning or core messaging needs to be set for an investor pitch, landing page, or sales deck narrative, or when someone says "we sound like everyone else" or "buyers don't understand what we do" or "our messaging feels generic." This skill walks through two critical steps: Anchor (what category do you own) and Craft (a three-level message hierarchy: core message, elevator pitch, full narrative). It does not write full landing pages, decks, or battle cards. Created by Shashwat Ghosh, Fractional CMO with 24+ years B2B experience.
 license: MIT
 metadata:
   author: shashwat-ghosh
   version: "1.0.0"
-  tags:
-    - b2b
-    - gtm
-    - strategy
-    - frameworks
+  tags: "b2b, gtm, strategy, frameworks"
 ---
 
 
 ## Section 0 — Operating Principles (MANDATORY — read before any workflow step)
 
-This skill operates under TWO mandatory reference files that together define all operating rules. **Read both files first**, before executing any workflow step in this SKILL.md. The rules in both files are non-negotiable and override any conflicting instruction in this SKILL.md body.
+This skill operates under TWO mandatory reference files that together define all operating rules. **Read both files first**, before executing any workflow step in this SKILL.md. The rules in both files take precedence over any conflicting instruction in this SKILL.md body. The user's explicit instruction still wins after a short warning, except for genuinely harmful output (see "Precedence" in `operating-principles.md`).
 
-1. **`../../references/operating-principles.md`** — the shared core: 7 universal rules (rigor, challenge-assumptions, no-harmful-output, fact-check with 4-tier source hierarchy, no-LLMisms, HILT discipline with Question Budget, zero-assumption flagging) that apply to every skill in this plugin and every plugin using this pattern. This file is byte-identical across all plugins that use the shared-core pattern.
+1. **`../../references/operating-principles.md`** — the shared core: 7 universal rules (rigor, challenge-assumptions, no-harmful-output, fact-check with 4-tier source hierarchy, no-LLMisms, HILT discipline with Question Budget, zero-assumption flagging) that apply to every skill in this plugin and every plugin using this pattern. This copy is adapted for this plugin from the shared core co-authored by Optise and Helix GTM Consulting.
 
 2. **`../../references/plugin-specific-rules.md`** — the plugin-specific tail: additional operational rules tailored to the skills in THIS plugin. Read this file AFTER the shared core, not instead of it. If this plugin currently has no plugin-specific rules, the file will be a stub explaining the architecture.
 
@@ -27,16 +23,16 @@ This skill operates under TWO mandatory reference files that together define all
 These are the highest-frequency rules from the two files above. Reading the full files is still mandatory — these reminders are a quick-reference, not a substitute.
 
 - **Web search and web fetch ARE available** in Claude Code's default toolset. "I don't have web access" is never a valid excuse to skip verification of a specific factual claim.
-- **English-only at v1** — never generate prompts, copy, headings, or client-facing text in non-English languages (German, French, Dutch, Spanish, Italian, Portuguese, Polish, etc.), even on explicit user request. This is a hard block, not a confirmation gate. Refuse the request and explain that multilingual may ship in v2 with native-speaker review.
+- **Language:** write in English by default. If the user explicitly asks for another language, write in that language and add a one-line note that these skills were written and tested in English, so a native speaker should review the text before it is used.
 - **4-tier source hierarchy applies to all factual claims.** Tier 1: official primary sources (press releases, Crunchbase, Wikipedia, SEC filings). Tier 2: reputable analyst firms (Gartner, Forrester, IDC, G2, Capterra, GigaOm, SoftwareReviews). Tier 3: reputable business and trade press (WSJ, FT, Reuters, Bloomberg, HBR, TechCrunch, named-VC content, named-founder blogs). Tier 4: NEVER cite (random blogs, anonymous posts, AI-generated comparison sites, Forbes Contributor, paid placements). If only Tier 4 sources are available, the claim is unverified and MUST be flagged.
 - **Verify competitor relationships** via the 4-step search protocol in Rule 4 before building ANY competitor-targeted page or content. Run: `"[user] acquired [competitor]"`, `"[competitor] acquired by"`, `"[competitor] Crunchbase acquisition"`, `"[user] vs [competitor]"`. Any positive ownership hit is a HARD STOP — invoke Rule 3's no-harmful-output protection.
-- **Auto-verify URLs** via `web_fetch` before marking them `[EXISTS]`. Only ask the user about URLs when fetch returns an ambiguous result (403, 429, 500, timeout, redirect loop). Do not ask the user about every URL; that is endless interrogation, not verification.
+- **Auto-verify URLs** via `web_fetch` before citing them as a source or telling the user to act on them. Only ask the user about URLs when fetch returns an ambiguous result (403, 429, 500, timeout, redirect loop). Do not ask the user about every URL; that is endless interrogation, not verification.
 - **Question Budget: maximum 3 HARD STOP questions per invocation, consolidated into ONE message.** Never run an endless Q&A sequence. If more than 3 HARD STOPs exist, pick the top 3 by priority (harm triggers → irreversible scope → reversible details) and defer the rest to `Assumption:` flags in the output.
 - **Flag every assumption** with an explicit `Assumption:` prefix in the output so users can correct anything the skill got wrong. Use the `[User to add: <description>]` placeholder convention for any field where the user must supply specific information.
 
 ### Conflict resolution
 
-If a domain rule in Section 7 of this SKILL.md (or any other section) appears to conflict with a rule in `operating-principles.md` or `plugin-specific-rules.md`, the operating principles win. Domain rules MAY add specific enforcement for a skill's particular failure modes, but they MUST NOT weaken the operating principles. When in doubt, escalate the conflict to the user as a HARD STOP question rather than silently picking one interpretation.
+If a domain rule in the Anti-Hallucination Rules section of this SKILL.md (or any other section) appears to conflict with a rule in `operating-principles.md` or `plugin-specific-rules.md`, the operating principles win. Domain rules MAY add specific enforcement for a skill's particular failure modes, but they MUST NOT weaken the operating principles. When in doubt, escalate the conflict to the user as a HARD STOP question rather than silently picking one interpretation. None of this overrides the user's explicit instruction: give a short warning, then follow it, unless the output would be genuinely harmful under Rule 3.
 
 ---
 
@@ -66,7 +62,7 @@ When Anchor Market analysis and Craft Message produce tension:
 
 ## Trigger Phrases
 
-Activate this skill when you see:
+Typical phrases that signal this skill applies, when the request is about positioning or core messaging:
 - "how to position", "positioning statement", "category positioning"
 - "what is our core message", "elevator pitch", "messaging hierarchy"
 - "we sound like everyone else", "messaging feels generic", "buyers don't get what we do"
@@ -204,14 +200,14 @@ Present all three levels clearly labeled:
 - Product: AI-powered invoice matching and reconciliation for mid-market finance teams
 - Target buyer: CFO and Controller at companies with 200-2000 employees, India and US
 - Category buyers search for: "accounts payable automation" and "invoice management software"
-- Top 3 competitors: Tipalti, Airbase, Ramp
-- Why we win: Speed of implementation (2 weeks vs 3 months), India-specific GST compliance, price (60% less than Tipalti)
-- Why we lose: Brand recognition, enterprise integrations (we lack SAP connector), trust ("never heard of you")
+- Top 3 competitors: [Competitor A], [Competitor B], [Competitor C] (fictional placeholders for larger global AP automation vendors)
+- Why we win: Speed of implementation (2 weeks vs 3 months), India-specific GST compliance, price (60% less than [Competitor A])
+- Why we lose: Brand recognition, enterprise integrations (we lack a connector for the large enterprise ERPs), trust ("never heard of you")
 - Adjacent categories: expense management, spend management, procure-to-pay
 
 **Step 1 — Anchor Market Analysis:**
 
-Option A (Own "accounts payable automation"): Tipalti, Airbase, Ramp all play here. They have 10x the brand, funding, and analyst coverage. Head-to-head in this category means outspending them on awareness. Not viable at Series A budget.
+Option A (Own "accounts payable automation"): [Competitor A], [Competitor B], and [Competitor C] all play here. They have far more brand recognition, funding, and analyst coverage. Head-to-head in this category means outspending them on awareness. Not viable at Series A budget.
 
 Option B (Sub-category: "AI-powered AP automation for Indian enterprises"): Takes the category buyers already search for ("AP automation") and narrows it to a geography + technology qualifier where we have clear permission to win (GST compliance, India pricing, faster implementation). Buyers searching "AP automation India" or "invoice management GST" land directly on us.
 
@@ -220,7 +216,7 @@ Option C (New category: "Intelligent Finance Operations"): Sounds impressive but
 **Recommended Category:** AI-powered AP automation for Indian enterprises
 **Positioning Type:** Sub-category (Option B)
 **Why This Anchor:** You win on speed, price, and India-specific compliance. These advantages are structural, not temporary. The sub-category is large enough (50,000+ mid-market companies in India with AP pain) for venture-scale growth.
-**Risk:** If Tipalti or Ramp launch India-specific features, the sub-category advantage narrows.
+**Risk:** If [Competitor A] or [Competitor C] launch India-specific features, the sub-category advantage narrows.
 **Test Question:** "If I told you we are AI-powered accounts payable automation built specifically for Indian mid-market companies with GST compliance, would that make sense as a category?"
 
 **Step 2 — Craft Message:**
@@ -233,11 +229,11 @@ AI accounts payable automation that gives Indian CFOs control.
 
 **LEVEL 3 — Full Narrative (2 minutes):**
 
-**Problem:** Indian mid-market CFOs process thousands of invoices monthly using spreadsheets, WhatsApp threads, and manual GST reconciliation. The global AP automation tools (Tipalti, Ramp) are built for US enterprises, take 3 months to implement, cost 2-3x what an Indian mid-market company can justify, and do not handle GST compliance natively. The result: finance teams burn 15-20 hours per week on work that should be automated.
+**Problem:** Indian mid-market CFOs process thousands of invoices monthly using spreadsheets, WhatsApp threads, and manual GST reconciliation. The global AP automation tools ([Competitor A], [Competitor C]) are built for US enterprises, take 3 months to implement, cost 2-3x what an Indian mid-market company can justify, and do not handle GST compliance natively. The result: finance teams burn 15-20 hours per week on work that should be automated.
 
 **Why now:** GST compliance requirements are tightening. The 2025-26 e-invoicing mandate for companies above ₹5 Cr turnover makes manual reconciliation a compliance risk, not just an efficiency problem. At the same time, AI has matured enough to do intelligent 3-way matching (PO, invoice, receipt) without rigid template configurations.
 
-**Solution:** Our platform uses AI to automatically match invoices to purchase orders and receipts, flag discrepancies, ensure GST compliance, and route approvals. Implementation takes 2 weeks, not 3 months, because we built for the Indian mid-market from day one. No SAP dependency. Works with Tally, Zoho, and QuickBooks.
+**Solution:** Our platform uses AI to automatically match invoices to purchase orders and receipts, flag discrepancies, ensure GST compliance, and route approvals. Implementation takes 2 weeks, not 3 months, because we built for the Indian mid-market from day one. No heavyweight ERP dependency. Works with [User to add: the accounting tools your customers already use].
 
 **Proof:** 40+ Indian mid-market companies process invoices through us. Average 85% auto-match rate on day one. ₹12L average annual savings per customer. [Named customer] reduced monthly close from 12 days to 3.
 

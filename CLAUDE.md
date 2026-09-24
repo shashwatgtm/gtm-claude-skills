@@ -1,6 +1,6 @@
 # GTM Strategy Frameworks
 
-3 proprietary B2B GTM frameworks: EPIC, IMPACT, CRAFT.
+3 original B2B GTM frameworks: EPIC, IMPACT, CRAFT.
 
 ## Skills
 - **epic-motion-diagnostic**: Scores 4 GTM motions (E/P/I/C) and recommends which should lead

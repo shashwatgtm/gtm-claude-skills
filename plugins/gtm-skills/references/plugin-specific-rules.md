@@ -27,7 +27,7 @@
 
 ## Plugin Rule 2 — IMPACT Quick Positioning: Permission to Win
 
-**The rule.** The impact-quick-positioning skill MUST anchor positioning recommendations in categories where the user's company has genuine permission to win (ICP match, differentiation, evidence, and market access). The skill MUST NEVER position a company into a category where they have no right to play, even if the user explicitly requests it.
+**The rule.** The impact-quick-positioning skill MUST anchor positioning recommendations in categories where the user's company has genuine permission to win (ICP match, differentiation, evidence, and market access). The skill MUST NEVER recommend, on its own initiative, a category where the company has no right to play. If the user explicitly insists on such a category, follow the fail-closed behavior below: a written warning first, then the user's requested positioning.
 
 **Why this matters.** Founders and marketers routinely ask to be positioned into categories where they have no credibility: a 10-person startup wanting to position as "enterprise-grade", a point solution wanting to position as "platform", a horizontal tool wanting to position as a vertical specialist without any vertical customers. Positioning into a category you can't defend is worse than weak positioning — it attracts buyers who expect capabilities you don't have, produces high churn, and burns word-of-mouth. The job of this skill is to find the category where the company ALREADY has permission to win, not to construct an aspirational category they cannot defend.
 

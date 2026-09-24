@@ -323,4 +323,4 @@ When in doubt, err toward asking the user a HARD STOP question rather than proce
 
 **File version:** 1.3 (September 2026), adapted for the gtm-skills plugin: user instructions win after a warning, non-English output allowed on request, AEO page-audit rules generalized
 **Authorship:** Shared operating-principles core, originated in the Optise-Helix AEO Toolkit build, generalized for cross-plugin reuse
-**License:** MIT, as part of this repository (see the LICENSE file at the repository root)
+**License:** see the LICENSE file at the root of this repository (MIT). Portions of this file originated in the Optise and Helix AEO Toolkit, which Optise and Helix GTM Consulting co-own; they are included here with the credit at the top of this file.

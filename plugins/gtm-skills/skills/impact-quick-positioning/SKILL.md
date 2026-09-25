@@ -215,7 +215,7 @@ Option C (New category: "Intelligent Finance Operations"): Sounds impressive but
 
 **Recommended Category:** AI-powered AP automation for Indian enterprises
 **Positioning Type:** Sub-category (Option B)
-**Why This Anchor:** You win on speed, price, and India-specific compliance. These advantages are structural, not temporary. The sub-category is large enough (50,000+ mid-market companies in India with AP pain) for venture-scale growth.
+**Why This Anchor:** You win on speed, price, and India-specific compliance. These advantages are structural, not temporary. The sub-category is large enough ([User to add: number of Indian mid-market companies with AP pain, from a sourced market estimate]) for venture-scale growth.
 **Risk:** If [Competitor A] or [Competitor C] launch India-specific features, the sub-category advantage narrows.
 **Test Question:** "If I told you we are AI-powered accounts payable automation built specifically for Indian mid-market companies with GST compliance, would that make sense as a category?"
 
@@ -225,19 +225,19 @@ Option C (New category: "Intelligent Finance Operations"): Sounds impressive but
 AI accounts payable automation that gives Indian CFOs control.
 
 **LEVEL 2 — Elevator Pitch (30 seconds):**
-[Company] is AI-powered AP automation built for Indian mid-market finance teams. We help CFOs and Controllers eliminate manual invoice matching, ensure GST compliance, and close books 5x faster. Unlike global tools that take 3 months to implement, we go live in 2 weeks at 60% lower cost. Over 40 Indian mid-market companies are already processing invoices through our platform.
+[Company] is AI-powered AP automation built for Indian mid-market finance teams. We help CFOs and Controllers eliminate manual invoice matching, ensure GST compliance, and close books [User to add: how much faster, from customer data]. Unlike global tools that take 3 months to implement, we go live in 2 weeks at 60% lower cost. [User to add: number of customers] Indian mid-market companies are already processing invoices through our platform.
 
 **LEVEL 3 — Full Narrative (2 minutes):**
 
-**Problem:** Indian mid-market CFOs process thousands of invoices monthly using spreadsheets, WhatsApp threads, and manual GST reconciliation. The global AP automation tools ([Competitor A], [Competitor C]) are built for US enterprises, take 3 months to implement, cost 2-3x what an Indian mid-market company can justify, and do not handle GST compliance natively. The result: finance teams burn 15-20 hours per week on work that should be automated.
+**Problem:** Indian mid-market CFOs process thousands of invoices monthly using spreadsheets, WhatsApp threads, and manual GST reconciliation. The global AP automation tools ([Competitor A], [Competitor C]) are built for US enterprises, take 3 months to implement, cost more than an Indian mid-market company can justify, and do not handle GST compliance natively. The result: finance teams burn [User to add: hours per week, from customer interviews] on work that should be automated.
 
-**Why now:** GST compliance requirements are tightening. The 2025-26 e-invoicing mandate for companies above ₹5 Cr turnover makes manual reconciliation a compliance risk, not just an efficiency problem. At the same time, AI has matured enough to do intelligent 3-way matching (PO, invoice, receipt) without rigid template configurations.
+**Why now:** GST compliance requirements are tightening. The e-invoicing mandate for companies above [User to add: current turnover threshold, from the official GST notification] makes manual reconciliation a compliance risk, not just an efficiency problem. At the same time, AI has matured enough to do intelligent 3-way matching (PO, invoice, receipt) without rigid template configurations.
 
 **Solution:** Our platform uses AI to automatically match invoices to purchase orders and receipts, flag discrepancies, ensure GST compliance, and route approvals. Implementation takes 2 weeks, not 3 months, because we built for the Indian mid-market from day one. No heavyweight ERP dependency. Works with [User to add: the accounting tools your customers already use].
 
-**Proof:** 40+ Indian mid-market companies process invoices through us. Average 85% auto-match rate on day one. ₹12L average annual savings per customer. [Named customer] reduced monthly close from 12 days to 3.
+**Proof:** [User to add: number of customers] Indian mid-market companies process invoices through us. [User to add: average auto-match rate on day one, from your data]. [User to add: average annual savings per customer]. [Named customer] reduced monthly close from [User to add: days before] to [User to add: days after].
 
-**CTA:** See it work on your own invoices. Upload 50 invoices and get a free accuracy report in 48 hours.
+**CTA:** See it work on your own invoices. [User to add: your trial offer, for example a free accuracy report on a sample of invoices].
 
 **Messaging Dos and Don'ts:**
 - Do: Lead with "2 weeks to go live" — this is your strongest differentiator against global tools that take months.

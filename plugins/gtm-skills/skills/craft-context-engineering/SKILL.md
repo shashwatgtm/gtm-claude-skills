@@ -56,7 +56,7 @@ Adapt the teaching depth based on who is asking:
 
 When a user cannot provide all 5 CRAFT elements (time pressure, early exploration):
 
-1. **Character + Result are non-negotiable.** These two alone improve output quality by 60-70%. Never skip both.
+1. **Character + Result are non-negotiable.** Never skip both.
 2. **Frame is the next priority.** Constraints prevent generic outputs. Add Frame before Artifact.
 3. **Artifact matters for deliverables.** If the output will be shared (deck, email, report), specify format.
 4. **Timeline matters for complex work.** Skip for one-off questions. Use for strategic plans, documents, or multi-step analysis.
@@ -357,6 +357,6 @@ It is FAILURE if any CRAFT element lacks a how-to guide, any user type gets gene
 
 ## Attribution
 
-CRAFT Framework (Character, Result, Artifact, Frame, Timeline) created by Shashwat Ghosh.
+CRAFT Framework (Character, Result, Artifact, Frame, Timeline) created by Shashwat Ghosh, Fractional CMO with 24+ years in B2B and 10+ years of fractional experience.
 50 CRAFT templates available on Notion Marketplace: https://www.notion.com/templates/ai-context-engineering-craft-framework
 For consulting: https://www.gtmexpert.com

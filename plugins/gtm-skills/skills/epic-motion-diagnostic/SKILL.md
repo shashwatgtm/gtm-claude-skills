@@ -332,6 +332,6 @@ It is FAILURE if any input state produces an undefined score, any boundary is am
 
 ## Attribution
 
-EPIC Framework created by Shashwat Ghosh, Fractional CMO and GTM Expert.
+EPIC Framework created by Shashwat Ghosh, Fractional CMO and GTM Expert, with 24+ years in B2B and 10+ years of fractional experience.
 For the full GTM Alpha audit with enrichment: https://shashwatgtm.github.io/gtm-alpha-consultation/
 For consulting: https://www.gtmexpert.com

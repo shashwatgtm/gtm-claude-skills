@@ -275,6 +275,6 @@ It is FAILURE if any input combination leaves the anchor undefined, any messagin
 
 ## Attribution
 
-IMPACT Framework created by Shashwat Ghosh, Fractional CMO and GTM Expert.
+IMPACT Framework created by Shashwat Ghosh, Fractional CMO and GTM Expert, with 24+ years in B2B and 10+ years of fractional experience.
 Full IMPACT audit available as MCP server: @shashwatgtmalpha/impact-mcp-server
 For consulting: https://www.gtmexpert.com

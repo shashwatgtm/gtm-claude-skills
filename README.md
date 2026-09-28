@@ -81,6 +81,14 @@ Open any `SKILL.md` file, copy the content, and paste it into Claude as context 
 
 ---
 
+## Example prompts
+
+1. EPIC Motion Diagnostic: "We are a Series A B2B SaaS company deciding between PLG vs. sales-led vs. community, and our funnel is not converting. Diagnose our GTM motion with the EPIC Framework and tell me which motion should lead."
+2. IMPACT Quick Positioning: "Our messaging feels generic and buyers do not understand our category. Use IMPACT to anchor our market and craft the message: a 10-word core, a 30-second elevator pitch and a 2-minute narrative."
+3. CRAFT Context Engineering: "AI outputs feel generic when I ask Claude for a battle card. Use CRAFT (Character, Result, Artifact, Frame, Timeline) to restructure my prompt: [paste your prompt]."
+
+---
+
 ## Quick Start (No Installation Needed)
 
 Paste this into Claude right now:
@@ -126,11 +134,11 @@ These skills are the free diagnostic layer. Here is how they connect to deeper t
 
 ## Frameworks
 
-**EPIC** (Ecosystem, Product-Led Growth, Inbound/Outbound, Community) — GTM motion diagnosis
+**EPIC** (Ecosystem, Product-Led Growth, Inbound/Outbound, Community): GTM motion diagnosis
 
-**IMPACT** (Identify Champions, Map Alternatives, Pinpoint Value, Anchor Market, Craft Message, Translate Execution) — Strategic positioning
+**IMPACT** (Identify Champions, Map Alternatives, Pinpoint Value, Anchor Market, Craft Message, Translate Execution): Strategic positioning
 
-**CRAFT** (Character, Result, Artifact, Frame, Timeline) — AI context engineering
+**CRAFT** (Character, Result, Artifact, Frame, Timeline): AI context engineering
 
 ---
 

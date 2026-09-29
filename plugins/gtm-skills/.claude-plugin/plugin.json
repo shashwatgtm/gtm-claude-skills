@@ -7,8 +7,10 @@
     "name": "Shashwat Ghosh",
     "url": "https://gtmexpert.com"
   },
-  "homepage": "https://gtmhelix.com/",
+  "homepage": "https://tools.gtmhelix.com/plugins/gtm-skills/",
   "repository": "https://github.com/shashwatgtm/gtm-claude-skills",
   "license": "MIT",
-  "keywords": ["b2b", "gtm", "go-to-market", "positioning", "prompt-engineering", "strategy"]
+  "keywords": ["b2b", "gtm", "go-to-market", "positioning", "prompt-engineering", "strategy"],
+  "privacyPolicyUrl": "https://gtmhelix.com/privacy/",
+  "icon": "./assets/icon.svg"
 }

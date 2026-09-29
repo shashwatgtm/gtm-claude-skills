@@ -4,7 +4,7 @@
 
 Plugin page with install steps for Claude Code and Cowork, and real example outputs from each skill: https://tools.gtmhelix.com/plugins/gtm-skills/
 
-Created by [Shashwat Ghosh](https://www.linkedin.com/in/shashwatghosh-ai-b2b-gtm-fractionalcmo/), Fractional CMO with 24+ years in B2B and 10+ years of fractional experience. VP Marketing, Happay: 161% ARR growth. 2x exit: to CRED ($180M+), then MakeMyTrip. VP Performance Marketing, Locus: $4.2M pipeline. Acquired by IKEA (Ingka Group) in Oct 2025.
+Created by [Shashwat Ghosh](https://www.linkedin.com/in/shashwatghosh-ai-b2b-gtm-fractionalcmo/), Co-Founder and Fractional CMO, Helix GTM Consulting, with 24+ years in B2B and 10+ years of fractional experience. VP Marketing, Happay: 161% ARR growth. 2x exit: to CRED ($180M+), then MakeMyTrip. VP Performance Marketing, Locus: $4.2M pipeline. Acquired by IKEA (Ingka Group) in Oct 2025.
 
 ---
 
@@ -12,7 +12,7 @@ Created by [Shashwat Ghosh](https://www.linkedin.com/in/shashwatghosh-ai-b2b-gtm
 
 EPIC, IMPACT and CRAFT are Shashwat Ghosh's original frameworks; they are not part of Claude's built-in skills.
 
-The community marketplaces have generic GTM skills, but [Anthropic explicitly recommends](https://support.claude.com/en/articles/12512176-what-are-skills) using skills only from trusted sources. These 3 skills are built on original frameworks by a practitioner with verified results at companies that got acquired. They contain zero executable code. Pure strategic reasoning you can audit in 5 minutes.
+The community marketplaces have generic GTM skills, but [Anthropic explicitly recommends](https://support.claude.com/en/articles/12512176-what-are-skills) using skills only from trusted sources. These 3 skills are built on original frameworks by a practitioner. They contain zero executable code. Pure strategic reasoning you can audit in 5 minutes.
 
 ---
 
@@ -126,7 +126,7 @@ These skills are the free diagnostic layer. Here is how they connect to deeper t
 |-------|------|-------|
 | **Free** (this repo) | 3 Claude Skills (diagnostic frameworks) | You are here |
 | **Free** | 50 CRAFT templates (Notion Marketplace) | [notion.com/templates](https://www.notion.com/templates/ai-context-engineering-craft-framework) |
-| **Free** | GTM Alpha scored report | [GTM Alpha](https://shashwatgtm.github.io/gtm-alpha-consultation/) |
+| **Free** | GTM Alpha scored report | [GTM Alpha](https://gtmalpha.gtmhelix.com/) |
 | **Self-serve** | 6 MCP servers (tool-grade execution) | [@shashwatgtmalpha on NPM](https://www.npmjs.com/~shashwatgtmalpha) |
 | **Consulting** | Fractional CMO engagement | [gtmexpert.com](https://www.gtmexpert.com) |
 
@@ -152,12 +152,12 @@ To report a security problem, email shashwat@gtmhelix.com with the subject "Secu
 
 ## About
 
-Shashwat Ghosh is a Fractional CMO and GTM Expert with 24+ years in B2B and 10+ years of fractional experience. Creator of the EPIC, IMPACT, and CRAFT frameworks. LinkedIn Top Product Marketing Voice, #10 India and #52 Worldwide (2024). VP Marketing, Happay: 161% ARR growth. 2x exit: to CRED ($180M+), then MakeMyTrip. VP Performance Marketing, Locus: $4.2M pipeline. Acquired by IKEA (Ingka Group) in Oct 2025.
+Shashwat Ghosh is Co-Founder and Fractional CMO, Helix GTM Consulting, with 24+ years in B2B and 10+ years of fractional experience. Creator of the EPIC, IMPACT, and CRAFT frameworks. LinkedIn Top Product Marketing Voice: #10 India, #52 worldwide (Favikon verified). VP Marketing, Happay: 161% ARR growth. 2x exit: to CRED ($180M+), then MakeMyTrip. VP Performance Marketing, Locus: $4.2M pipeline. Acquired by IKEA (Ingka Group) in Oct 2025.
 
 - LinkedIn: [linkedin.com/in/shashwatghosh-ai-b2b-gtm-fractionalcmo](https://www.linkedin.com/in/shashwatghosh-ai-b2b-gtm-fractionalcmo/)
 - Website: [gtmexpert.com](https://www.gtmexpert.com)
-- GTM Alpha: [shashwatgtm.github.io/gtm-alpha-consultation](https://shashwatgtm.github.io/gtm-alpha-consultation/)
-- Twitter: [@Shashwat_Ghosh](https://twitter.com/Shashwat_Ghosh)
+- GTM Alpha: [gtmalpha.gtmhelix.com](https://gtmalpha.gtmhelix.com/)
+- Twitter: [@Shashwat_Ghosh](https://x.com/Shashwat_Ghosh)
 
 ---
 

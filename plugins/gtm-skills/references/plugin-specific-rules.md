@@ -1,6 +1,6 @@
 # Plugin-Specific Rules — gtm-claude-skills
 
-**Scope:** This file applies ONLY to the three skills in the `gtm-claude-skills` plugin (epic-motion-diagnostic, impact-quick-positioning, craft-context-engineering). It is read in addition to the shared `operating-principles.md` file in this same `references/` folder, NOT instead of it. The rules below are framework-specific operational rules that encode the methodology behind the EPIC, IMPACT, and CRAFT frameworks. Each rule prevents a common failure mode observed when these frameworks are applied without discipline.
+**Scope:** This file applies ONLY to the three skills in the `gtm-claude-skills` plugin (gtm-motion-picker, positioning-and-messaging, prompt-improver). It is read in addition to the shared `operating-principles.md` file in this same `references/` folder, NOT instead of it. The rules below are framework-specific operational rules that encode the methodology behind the EPIC, IMPACT, and CRAFT frameworks. Each rule prevents a common failure mode observed when these frameworks are applied without discipline.
 
 **Read order:** Skills MUST read `operating-principles.md` (shared core) FIRST, then this file. The shared core's 7 universal rules (rigor, challenge-assumptions, no-harmful-output, fact-check, no-LLMisms, HILT discipline, zero-assumption) apply to every skill in this plugin. The plugin-specific rules below are additive — they do not replace or weaken the shared core.
 
@@ -8,7 +8,7 @@
 
 ## Plugin Rule 1 — EPIC Motion Diagnostic: Score Before Tactics
 
-**The rule.** The epic-motion-diagnostic skill MUST score the GTM motion (PLG, Sales-led, Channel-led, Community-led) BEFORE recommending any specific tactic, channel, playbook, or hire. The motion score determines which tactics are appropriate; recommending tactics before the score is backwards and produces misaligned advice.
+**The rule.** The gtm-motion-picker skill MUST score the GTM motion (PLG, Sales-led, Channel-led, Community-led) BEFORE recommending any specific tactic, channel, playbook, or hire. The motion score determines which tactics are appropriate; recommending tactics before the score is backwards and produces misaligned advice.
 
 **Why this matters.** The most common failure mode in GTM consulting is recommending tactics (cold outbound, content marketing, partner programs, product trials) without first understanding which motion the company is actually running. A PLG company given sales-led tactics will burn budget on SDRs who can't close deals that should have been product-qualified. A sales-led company given PLG tactics will build freemium funnels that attract users the sales team can't monetize. The motion IS the strategy; tactics are downstream of the motion. Recommending tactics first is the GTM equivalent of prescribing medication without a diagnosis.
 
@@ -27,7 +27,7 @@
 
 ## Plugin Rule 2 — IMPACT Quick Positioning: Permission to Win
 
-**The rule.** The impact-quick-positioning skill MUST anchor positioning recommendations in categories where the user's company has genuine permission to win (ICP match, differentiation, evidence, and market access). The skill MUST NEVER recommend, on its own initiative, a category where the company has no right to play. If the user explicitly insists on such a category, follow the fail-closed behavior below: a written warning first, then the user's requested positioning.
+**The rule.** The positioning-and-messaging skill MUST anchor positioning recommendations in categories where the user's company has genuine permission to win (ICP match, differentiation, evidence, and market access). The skill MUST NEVER recommend, on its own initiative, a category where the company has no right to play. If the user explicitly insists on such a category, follow the fail-closed behavior below: a written warning first, then the user's requested positioning.
 
 **Why this matters.** Founders and marketers routinely ask to be positioned into categories where they have no credibility: a 10-person startup wanting to position as "enterprise-grade", a point solution wanting to position as "platform", a horizontal tool wanting to position as a vertical specialist without any vertical customers. Positioning into a category you can't defend is worse than weak positioning — it attracts buyers who expect capabilities you don't have, produces high churn, and burns word-of-mouth. The job of this skill is to find the category where the company ALREADY has permission to win, not to construct an aspirational category they cannot defend.
 
@@ -47,7 +47,7 @@
 
 ## Plugin Rule 3 — CRAFT Context Engineering: Context Over Cleverness
 
-**The rule.** The craft-context-engineering skill MUST prioritize adding more context to an AI prompt over rewording the prompt for cleverness, brevity, or stylistic elegance. When in doubt between "shorter and cleverer" vs "longer and more contextual", always choose longer and more contextual.
+**The rule.** The prompt-improver skill MUST prioritize adding more context to an AI prompt over rewording the prompt for cleverness, brevity, or stylistic elegance. When in doubt between "shorter and cleverer" vs "longer and more contextual", always choose longer and more contextual.
 
 **Why this matters.** The dominant failure mode in prompt engineering is over-optimizing prompt wording while under-specifying context. Users spend hours tweaking a 50-word prompt hoping for better output when the actual fix is supplying 500 words of context (examples, constraints, role, task specifics, output format, edge cases). The CRAFT framework exists because context is high-leverage and wording is low-leverage. Treating prompt engineering as a wordsmithing exercise misses the entire point of the framework.
 

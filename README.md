@@ -1,6 +1,6 @@
-# GTM Claude Skills Pack
+# Positioning and GTM Strategy
 
-**3 original B2B go-to-market frameworks for Claude.** Diagnose your GTM motion, position your product, and structure every AI interaction for boardroom-grade outputs.
+**Position your B2B product, write your core message and pick the right go-to-market motion.** Three Claude skills built on Shashwat Ghosh's IMPACT, EPIC and CRAFT methods; the third turns vague AI prompts into specific ones.
 
 Plugin page with install steps for Claude Code and Cowork, and real example outputs from each skill: https://tools.gtmhelix.com/plugins/gtm-skills/
 
@@ -18,8 +18,8 @@ The community marketplaces have generic GTM skills, but [Anthropic explicitly re
 
 ## The 3 Skills
 
-### 1. EPIC Motion Diagnostic
-**File:** `epic-motion-diagnostic/SKILL.md`
+### 1. GTM motion picker (EPIC)
+**File:** `gtm-motion-picker/SKILL.md`
 
 Diagnose which B2B go-to-market motion should lead before choosing tactics or channels. Scores four motions (Ecosystem, Product-Led, Inbound/Outbound, Community) based on your stage, industry, geography, deal cycle, and NRR.
 
@@ -27,8 +27,8 @@ Diagnose which B2B go-to-market motion should lead before choosing tactics or ch
 
 **Includes:** Stage-based scoring defaults, 15+ adjustment rules, leaky bucket detection (NRR < 100%), AEO/GEO inbound disruption signals, industry overrides, geography adjustments.
 
-### 2. IMPACT Quick Positioning
-**File:** `impact-quick-positioning/SKILL.md`
+### 2. Positioning and messaging (IMPACT)
+**File:** `positioning-and-messaging/SKILL.md`
 
 Build a defensible market position and messaging hierarchy. Covers two steps of the six-step IMPACT Framework: Anchor Market (what category do you own) and Craft Message (10-word core → 30-second elevator → 2-minute narrative).
 
@@ -36,8 +36,8 @@ Build a defensible market position and messaging hierarchy. Covers two steps of 
 
 **Includes:** Three positioning options (own existing category, create sub-category, create new category), decision framework, three-level messaging hierarchy template, and validation questions.
 
-### 3. CRAFT Context Engineering Guide
-**File:** `craft-context-engineering/SKILL.md`
+### 3. Prompt improver (CRAFT)
+**File:** `prompt-improver/SKILL.md`
 
 Structure any AI prompt for consistently high-quality outputs using the CRAFT meta-framework: Character, Result, Artifact, Frame, Timeline. This is the "how to use AI effectively" skill that makes every other AI interaction more productive.
 

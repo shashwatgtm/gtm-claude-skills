@@ -1,13 +1,29 @@
 {
   "name": "gtm-skills",
-  "version": "1.1.2",
-  "description": "3 original B2B GTM frameworks by Shashwat Ghosh (Helix GTM Consulting): EPIC Motion Diagnostic, IMPACT Quick Positioning, CRAFT Context Engineering",
+  "displayName": "Positioning and GTM Strategy",
+  "version": "1.2.0",
+  "description": "Position your B2B product, write your core message and pick the right go-to-market motion: product-led, sales-led, partner or community. Also improves vague AI prompts. Built on Helix's IMPACT, EPIC and CRAFT methods.",
   "author": {
     "name": "Shashwat Ghosh",
     "url": "https://gtmexpert.com"
   },
-  "homepage": "https://github.com/shashwatgtm/gtm-claude-skills",
+  "homepage": "https://tools.gtmhelix.com/plugins/gtm-skills/",
+  "documentationUrl": "https://github.com/shashwatgtm/gtm-claude-skills#readme",
+  "supportUrl": "https://tools.gtmhelix.com/#questions",
+  "privacyPolicyUrl": "https://tools.gtmhelix.com/privacy/",
+  "termsOfServiceUrl": "https://github.com/shashwatgtm/gtm-claude-skills/blob/main/LICENSE",
   "repository": "https://github.com/shashwatgtm/gtm-claude-skills",
   "license": "MIT",
-  "keywords": ["b2b", "gtm", "go-to-market", "positioning", "prompt-engineering", "strategy"]
+  "keywords": [
+    "positioning",
+    "messaging",
+    "value-proposition",
+    "differentiation",
+    "elevator-pitch",
+    "go-to-market",
+    "gtm-strategy",
+    "product-led-growth",
+    "product-marketing",
+    "prompt-engineering"
+  ]
 }

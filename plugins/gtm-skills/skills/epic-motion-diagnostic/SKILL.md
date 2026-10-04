@@ -239,7 +239,7 @@ Present results as:
 ## Complete Worked Example
 
 **Input:**
-- Company: ExampleCo (fictional; AI contract management)
+- Company: a hypothetical AI contract management startup (made up for this walk-through, not a real company; every number below is a made-up test input)
 - Stage: Series A
 - Team: 12 people, 2 doing GTM (founder + 1 SDR)
 - Current GTM: Content blog, 1 SDR doing cold outbound, attending 2 conferences/year
@@ -301,6 +301,18 @@ Three Actions for Monday Morning:
 3. Apply for Gartner or Forrester coverage in the contract management category. Your challenge mentions losing to incumbents with analyst coverage. Fix the gap.
 
 What to Stop Doing: The cold outbound SDR motion. With 2,500 accounts and 120-day cycles, a single SDR burning through a cold list is not a scalable motion. Redirect that person to partner co-selling and named account research.
+
+**Worked example 2: a real company name with no numbers (the skill does not score from a name)**
+
+*Example only: Yellow.ai is a real company used to show how this skill works, using public information from its own website. It is not a customer, partner or endorser of Helix GTM Consulting, and nothing here is advice to or about it.*
+
+**Input:** "Which GTM motion should lead for Yellow.ai?"
+
+**Output:**
+
+I will not assign EPIC scores from a company name (see the Anti-Hallucination Rules below). What I can read from the company's own website (https://yellow.ai/agentic-ai-platform/, read on 3 October 2026): it describes a platform "powered by Agentic AI, built for scalable, context-aware enterprise service automation". That tells me the product category. It does not tell me the stage, deal size, deal cycle, retention or where the best customers come from, and those decide the scores.
+
+To run the diagnostic I need: stage, team size and who does GTM, current GTM activities, deal cycle, ACV, NRR (or a directional answer: more expansion or more churn), where the best customers come from, number of addressable accounts, geography and your main challenge. Send what you know; for anything unavailable I will flag the output "preliminary - rerun when you have [missing data]". No numbers about Yellow.ai appear in this example, and none would be assumed.
 
 ## Quality Standard: 100% Rule Coverage
 

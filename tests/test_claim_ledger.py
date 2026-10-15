@@ -1120,5 +1120,23 @@ class Loop9(unittest.TestCase):
         self.assertIn("FIGURE:", out, out)
 
 
+class Loop10(unittest.TestCase):
+    """Run 37P loop 10, from the round 1 trace (names removed): a fenced prompt states how a buyer role behaves as fact."""
+    def test_role_behaviour_in_a_fenced_prompt_is_listed(self):
+        text = "```\nCHARACTER: You write cold emails for a data labelling firm.\nYou know a head of data deletes any email that opens with a cliche or claims quality without proof.\n```"
+        code, out = run("Improve my prompt: write a cold email to heads of data.", [text])
+        self.assertIn("NEEDS line 3", out, out)
+
+    def test_hedged_or_labelled_role_line_in_a_fenced_prompt_passes(self):
+        for line in ["Treat as a hypothesis, not a fact: a head of data may skip emails that open with a cliche.",
+                     "A head of data may delete an email that opens with a cliche."]:
+            code, out = run("Improve my prompt: write a cold email to heads of data.", ["```\n" + line + "\n```"])
+            self.assertNotIn("NEEDS line 2", out, line + "\n" + out)
+
+    def test_instructions_in_a_fenced_prompt_pass(self):
+        code, out = run("Improve my prompt: write a cold email to heads of data.", ["```\nWrite 120 words or fewer to a head of data. Never claim quality without proof.\n```"])
+        self.assertNotIn("NEEDS line 2", out, out)
+
+
 if __name__ == "__main__":
     unittest.main()

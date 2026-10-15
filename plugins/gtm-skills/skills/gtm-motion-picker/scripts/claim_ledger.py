@@ -556,6 +556,11 @@ def fence_check(s, src):
     if is_instruction(s) or re.search(r"\b(or fewer|or less|at most|no more than|under|max(imum)?|limit)\b", s, re.I):
         return needs   # loop 6 (re-check R3): a limit in a prompt ("Write 120 words or fewer.") is an instruction, not a claim
     body = DATE.sub(" ", QUOTED.sub(" ", s))
+    # loop 10 (round 1 GPI1, trace item c): a prompt line that says how a buyer role behaves, as fact, with no hedge or label
+    if roles_in(body) and not HEDGE.search(body) and not any(rx.search(s) for rx in LABELS.values()) and not re.search(r"\bnot (?:a )?facts?\b", s, re.I) \
+            and (re.search(r"\b(any|every|all|always|never|none|each)\b", body, re.I) or FACT_PRESENT.search(body) or GENERAL.search(body)
+                 or re.search(r"\b(you know|it is known|everyone knows)\b", body, re.I)):
+        needs.append(("RULE", "this prompt line states how a buyer role behaves as fact; write it as a hypothesis the prompt asks the model to treat as one, or quote the user"))
     for tok in NUM.findall(re.sub(r"(\d) ?per ?cent\b", r"\1%", body)):
         k = fig_key(tok)
         if k and significant(tok) and k not in src.user_figs and k not in src.source_figs:
@@ -594,7 +599,7 @@ def roles_in(body):
         before = re.findall(r"([A-Za-z][\w-]*)\s+$", body[:m.start()])
         after = re.match(r"\s+of\s+(?:the\s+)?([A-Za-z][\w-]*)", body[m.end():])
         anchor, phrase = {stem(w)}, w
-        if after and (after.group(1).lower() not in STOP or after.group(1) == "IT"):
+        if after and (after.group(1).lower() not in STOP or after.group(1) == "IT" or after.group(1).lower() in ("data", "sales", "product", "growth", "support", "marketing", "finance", "people", "security")):   # loop 10: "head of data"
             anchor.add(stem(after.group(1))); phrase = f"{w} of {after.group(1)}"
         elif before and (before[0].lower() not in STOP or before[0] == "IT") and not ROLE.fullmatch(before[0]):
             anchor.add(stem(before[0])); phrase = f"{before[0]} {w}"

@@ -120,7 +120,7 @@ These skills are the free diagnostic layer. Here is how they connect to deeper t
 | **Free** | 50 CRAFT templates (Notion Marketplace) | [notion.com/templates](https://www.notion.com/templates/ai-context-engineering-craft-framework) |
 | **Free** | GTM Alpha scored report | [GTM Alpha](https://shashwatgtm.github.io/gtm-alpha-consultation/) |
 | **Self-serve** | 6 MCP servers (tool-grade execution) | [@shashwatgtmalpha on NPM](https://www.npmjs.com/~shashwatgtmalpha) |
-| **Consulting** | Fractional CMO engagement | [gtmexpert.com](https://www.gtmexpert.com) |
+| **Consulting** | Fractional CMO engagement | [gtmhelix.com/about](https://gtmhelix.com/about/) |
 
 ---
 
@@ -142,6 +142,18 @@ In Claude Code the plugin also installs a Stop hook (`hooks/hooks.json`, `hooks/
 
 The tests for the script and the hook are in `tests/` at the repository root, outside the plugin folder; they are not installed with the plugin.
 
+## For reviewers
+
+What the shipped code does, for anyone reviewing this plugin (directory reviewers included). Everything below is checked in the files of this version.
+
+- `skills/<skill>/scripts/claim_ledger.py` (the same file in every skill, Python standard library only) reads only the files Claude names on its command line: a copy of the user's message, the page text and search results Claude saved, the reply and the saved files (Word, PowerPoint and Excel files are opened as zip archives with the standard library and read as text). It writes no file, sends nothing, opens no network connection, starts no program and reads no environment variable.
+- `hooks/delivery_check.py` (the Stop hook, Claude Code only, standard library only) reads the hook input on standard input and the session transcript file that input names, and writes one small counter file per session next to that transcript. It sends nothing, opens no network connection, starts no program and reads no environment variable; hooks.json runs it with `python3 -I` (isolated mode, so Python ignores PYTHON* variables and the user's site folder). The hook is new in the 1.2.x updates on purpose: it is the check that the reply the user receives is the text the claim ledger checked.
+- Words a scanner may read as network or credential use, and why they are there (kept, because the behaviour needs them):
+  - "export" and "exports" are ordinary words in the claim ledger's list of common words (as in "a CRM export"); the script never runs a shell command.
+  - `curl https?://...` is part of a regular expression in the claim ledger that recognises an instruction planted in a pasted page or file (for example a hidden line telling an assistant to send data to an address), so the skill can tell the user and ignore it. It is text the script looks for, never a command it runs.
+  - "curl" and "wget" in the hook are patterns that recognise a page Claude downloaded to read, so that file is treated as an input and not as a deliverable. The hook runs nothing.
+- From this version the claim ledger reads Office files by element name, so it holds no web address at all, and Strict Open XML files are read like Transitional ones (before, a Strict file read as empty).
+
 ## Security
 
 The skills are markdown instruction files plus one small Python script each (the claim ledger) and one Stop hook script for Claude Code, described in the section above. They make no API call and send no data anywhere. You can read every word before installing. They follow the [Agent Skills open standard](https://agentskills.io) published by Anthropic.
@@ -155,7 +167,7 @@ To report a security problem, email shashwat@gtmhelix.com with the subject "Secu
 Shashwat Ghosh is a Fractional CMO and GTM Expert with 24+ years in B2B and 10+ years of fractional experience. Creator of the EPIC, IMPACT, and CRAFT frameworks. LinkedIn Top Product Marketing Voice, #10 India and #52 Worldwide (2024). VP Marketing, Happay: 161% ARR growth. 2x exit: to CRED ($180M+), then MakeMyTrip. VP Performance Marketing, Locus: $4.2M pipeline. Acquired by IKEA (Ingka Group) in Oct 2025.
 
 - LinkedIn: [linkedin.com/in/shashwatghosh-ai-b2b-gtm-fractionalcmo](https://www.linkedin.com/in/shashwatghosh-ai-b2b-gtm-fractionalcmo/)
-- Website: [gtmexpert.com](https://www.gtmexpert.com)
+- Website: [gtmhelix.com/about](https://gtmhelix.com/about/)
 - GTM Alpha: [shashwatgtm.github.io/gtm-alpha-consultation](https://shashwatgtm.github.io/gtm-alpha-consultation/)
 - Twitter: [@Shashwat_Ghosh](https://twitter.com/Shashwat_Ghosh)
 

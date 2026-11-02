@@ -174,7 +174,7 @@ Score each motion from 1 to 10 based on the inputs. Use these rules:
 
 **Adjustment rules (apply on top of defaults):**
 
-Boundary rule: All thresholds use inclusive comparison. ">" means "greater than" (excludes the threshold). Exact boundary values get no adjustment for that rule. For example, ACV of exactly $50K gets no ACV adjustment. ACV of $50,001 triggers E+2, P-1.
+Boundary rule: Use the comparison operator stated in each rule. ">" means "greater than" (excludes the threshold). Exact boundary values get no adjustment for that rule. For example, ACV of exactly $50K gets no ACV adjustment. ACV of $50,001 triggers E+2, P-1.
 
 - If ACV > $50K: E +2, P -1
 - If ACV >= $5K and <= $50K: no ACV adjustment
@@ -262,7 +262,7 @@ Present results as:
 - Deal cycle: 120 days
 - ACV: $42K
 - NRR: 108%
-- Best customers come from: Partner introductions through a legal tech reseller
+- Best customers come from: Partner introductions through a legal tech reseller. In this hypothetical test input, a majority of deals comes from those partnerships.
 - TAM: ~2,500 legal departments at mid-market companies
 - Geography: India, selling to India and US
 - Challenge: "Sales cycle is too long, losing deals to incumbents who have analyst coverage"
@@ -307,7 +307,7 @@ EPIC Scores: E: 9/10 | P: 5/10 | I: 5/10 | C: 4/10
 
 Primary Motion: Ecosystem. 120-day deal cycles through legal department buying committees, 2,500 addressable accounts, and your strongest deals coming through partner introductions all point decisively to an Ecosystem-led motion. The E score is 9 from the stage, deal cycle and supplied partner acquisition evidence.
 
-Secondary Motion: Product and Inbound/Outbound tie at 5; Community scores 4. For a 12-person company with 1 SDR, Inbound is more scalable with fewer people than Community (which requires a customer base you are still building). Secondary: Inbound.
+Secondary Motion: Product and Inbound/Outbound tie at 5; Community scores 4. The input has no self-serve product and already has a blog and an SDR, so test Inbound/Outbound as the secondary motion before investing in a product led path. This is a test recommendation, not a new score adjustment.
 
 Critical Warning: None. No signal overrides detected.
 

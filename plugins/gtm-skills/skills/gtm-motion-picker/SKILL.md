@@ -79,7 +79,7 @@ When scoring signals conflict, resolve in this order:
 1. **NRR signals override acquisition signals.** If NRR < 100%, suppress I regardless of other positive I signals. Leaky bucket always wins.
 2. **Industry overrides override keyword matches.** If the industry is Logistics/Procurement/Manufacturing, cap P at 4 even if the user mentions "self-serve" or "free trial."
 3. **Deal source signals override stage defaults.** If 80% of deals come from referrals, C leads regardless of stage-based defaults suggesting I.
-4. **Geography adjustments apply last** and never override the above three priority rules.
+4. **Geography does not adjust scores.** Use sourced country context only for qualitative checks.
 
 ## Trigger Phrases
 
@@ -195,14 +195,11 @@ Boundary rule: All thresholds use inclusive comparison. ">" means "greater than"
 - If majority of deals come from partnerships: E +2
 - If no single source accounts for majority (mixed/unclear): do not apply deal source adjustments, but note in output: "No dominant acquisition channel detected. This usually means the company has not yet found its repeatable motion."
 
-**Geography adjustments:**
-- India B2B: E +1 (relationship-driven market), C +1 (peer trust high)
-- US/EU: I +1 (content and inbound infrastructure mature)
-- Middle East: E +2 (partnership and relationship-first culture)
-- APAC (excl. India): E +1 (relationship-driven, similar to India but less peer-trust signal)
-- Global or multi-geography: no geography adjustment; note that different motions may lead in different regions
+**Geography context, no score adjustment:**
 
-**Stacking rule:** All adjustments are additive. Apply stage defaults first, then all applicable adjustments in order (ACV, deal cycle, NRR, TAM, self-serve, deal source, geography). After all adjustments, apply score bounds (min 1, max 10). Then check signal-based overrides. Stacking is intentional: a company with ACV >$50K AND deal cycle >90 days AND TAM <500 will legitimately see E increase by +6 from adjustments alone, which correctly identifies a strong Ecosystem signal.
+Do not add or subtract points because of a country, region or assumed culture. Use supplied acquisition evidence under the existing deal source rules. Identical seller facts must receive identical scores across markets. Use sourced country context for qualitative checks only and label each market separately.
+
+**Stacking rule:** All adjustments are additive. Apply stage defaults first, then all applicable adjustments in order (ACV, deal cycle, NRR, TAM, self-serve, deal source). After all adjustments, apply score bounds (min 1, max 10). Then check signal-based overrides. Stacking is intentional: a company with ACV >$50K AND deal cycle >90 days AND TAM <500 will legitimately see E increase by +6 from adjustments alone, which correctly identifies a strong Ecosystem signal.
 
 **Signal-based overrides:**
 
@@ -292,25 +289,25 @@ Running totals: E=7, P=5, I=5, C=4
 Step 7: Deal source (partner introductions = partnerships majority): E+2
 Running totals: E=9, P=5, I=5, C=4
 
-Step 8: Geography (India B2B): E+1, C+1
-Running totals: E=10, P=5, I=5, C=5
+Step 8: Geography: No score adjustment. Keep India and US qualitative checks separate.
+Running totals: E=9, P=5, I=5, C=4
 
-Step 9: Score bounds check: E=10 (at max, acceptable). All others within 1-10. Pass.
+Step 9: Score bounds check: All scores are within 1-10. Pass.
 
 Step 10: Signal-based overrides:
 - Leaky bucket? NRR=108%, no. Skip.
 - AEO/GEO? Not mentioned. Skip.
 - Hybrid SLG? P=5 (not >6). Skip.
 
-**Final EPIC Scores:** E=10, P=5, I=5, C=5
+**Final EPIC Scores:** E=9, P=5, I=5, C=4
 
 **Output:**
 
-EPIC Scores: E: 10/10 | P: 5/10 | I: 5/10 | C: 5/10
+EPIC Scores: E: 9/10 | P: 5/10 | I: 5/10 | C: 4/10
 
-Primary Motion: Ecosystem. 120-day deal cycles through legal department buying committees, 2,500 addressable accounts, and your strongest deals coming through partner introductions all point decisively to an Ecosystem-led motion. Your E score maxed at 10 because every signal reinforces it.
+Primary Motion: Ecosystem. 120-day deal cycles through legal department buying committees, 2,500 addressable accounts, and your strongest deals coming through partner introductions all point decisively to an Ecosystem-led motion. The E score is 9 from the stage, deal cycle and supplied partner acquisition evidence.
 
-Secondary Motion: Inbound/Outbound and Community tied at 5. For a 12-person company with 1 SDR, Inbound is more scalable with fewer people than Community (which requires a customer base you are still building). Secondary: Inbound.
+Secondary Motion: Product and Inbound/Outbound tie at 5; Community scores 4. For a 12-person company with 1 SDR, Inbound is more scalable with fewer people than Community (which requires a customer base you are still building). Secondary: Inbound.
 
 Critical Warning: None. No signal overrides detected.
 

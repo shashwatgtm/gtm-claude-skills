@@ -1,0 +1,49 @@
+{
+  "skills": [
+    {
+      "repo": "gtm-claude-skills",
+      "path": "plugins/gtm-skills/skills/prompt-improver/SKILL.md",
+      "before_sha256": "007f689bd22856233cf6712eae816750c5363c2de12b8c5a0ed5cf02e6e5dfc0",
+      "after_sha256": "59ae1b03a37b24d925a0b812e9be65f273a7f10062b779421ab61038fdc356a8",
+      "frontmatter_sha256": "6b2b56b8ec5b54b49d0277a3f5a89460593f92e14c2526a2d91aa4abb5b98d9e",
+      "reference_sha256": "48e5917aecb374a4dfd467a5a74a066c1061c275d6110cc51b36a4860fe0bd8e"
+    },
+    {
+      "repo": "gtm-claude-skills",
+      "path": "plugins/gtm-skills/skills/positioning-and-messaging/SKILL.md",
+      "before_sha256": "94a15cd3f54e045bad8d7fabcb92476ac0d982dec1e833f68aff14e6826a817f",
+      "after_sha256": "71706736f249bedc68689d380cea51f5fc9a34c7ec98972ea9235779438af104",
+      "frontmatter_sha256": "b1eb9b4fd3ebdb4a5d8e18970972500a9a94c13a835d58ae665c973c62e0582a",
+      "reference_sha256": "48e5917aecb374a4dfd467a5a74a066c1061c275d6110cc51b36a4860fe0bd8e"
+    },
+    {
+      "repo": "gtm-claude-skills",
+      "path": "plugins/gtm-skills/skills/gtm-motion-picker/SKILL.md",
+      "before_sha256": "daaea481b64456c6e5c83d14dd7c99d02b09faff0279812ea59dcdfe4e784ef8",
+      "after_sha256": "dafd7c60a144bbe4c1720e7e780d5a6f16ffd980ab902403fcd0fb6b32ba8776",
+      "frontmatter_sha256": "e904689fb480db44948200e9b0b16532ecf6e9dd6e8a13dc5b74fde8b1ca65fa",
+      "reference_sha256": "48e5917aecb374a4dfd467a5a74a066c1061c275d6110cc51b36a4860fe0bd8e"
+    }
+  ],
+  "tools": {
+    "alpha": [
+      "gtm_consultation",
+      "epic_audit",
+      "generate_roadmap"
+    ],
+    "revenue": [
+      "account_plan_builder",
+      "deal_strategy_coach",
+      "discovery_question_bank",
+      "roi_business_case_builder",
+      "mutual_action_plan_generator",
+      "win_loss_analyzer",
+      "proposal_section_writer",
+      "email_sequence_generator",
+      "demo_script_builder",
+      "pricing_negotiation_guide",
+      "champion_enablement_kit",
+      "competitive_trap_setter"
+    ]
+  }
+}

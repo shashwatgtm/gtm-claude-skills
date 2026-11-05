@@ -1,10 +1,12 @@
 # Positioning and GTM Strategy
 
-**Position your B2B product, write your core message and pick the right go-to-market motion.** Three Claude skills built on Shashwat Ghosh's IMPACT, EPIC and CRAFT methods; the third turns vague AI prompts into specific ones.
+**Decide which go-to-market motion should lead, which category to own and what your core message is.** Three Claude skills for B2B founders, CMOs and product marketers, built on Shashwat Ghosh's IMPACT, EPIC and CRAFT methods. You give them your product, buyers, stage and market; you get the four motions scored with the one that should lead, a positioning and three level message hierarchy, and, with the third skill, vague AI prompts turned into specific ones.
+
+This plugin runs in Claude Code and Claude Cowork. The same skills are also bundled in the Helix GTM Suite for Gemini CLI and Antigravity: https://github.com/shashwatgtm/helix-gtm-suite
 
 Plugin page with install steps for Claude Code and Cowork, and real example outputs from each skill: https://tools.gtmhelix.com/plugins/gtm-skills/
 
-Created by [Shashwat Ghosh](https://www.linkedin.com/in/shashwatghosh-ai-b2b-gtm-fractionalcmo/), Fractional CMO with 24+ years in B2B and 10+ years of fractional experience. VP Marketing, Happay: 161% ARR growth. 2x exit: to CRED ($180M+), then MakeMyTrip. VP Performance Marketing, Locus: $4.2M pipeline. Acquired by IKEA (Ingka Group) in Oct 2025.
+Created by [Shashwat Ghosh](https://www.linkedin.com/in/shashwatghosh-ai-b2b-gtm-fractionalcmo/), Fractional CMO with 24+ years in B2B and 10+ years of fractional experience. VP Marketing, Happay: 161% ARR growth. 2x exit: to CRED ($180M), then MakeMyTrip. VP Global Performance Marketing, Locus: $4.2M pipeline. Acquired by IKEA (Ingka Group) in Oct 2025.
 
 ---
 
@@ -144,7 +146,7 @@ To report a security problem, email shashwat@gtmhelix.com with the subject "Secu
 
 ## About
 
-Shashwat Ghosh is a Fractional CMO and GTM Expert with 24+ years in B2B and 10+ years of fractional experience. Creator of the EPIC, IMPACT, and CRAFT frameworks. LinkedIn Top Product Marketing Voice, #10 India and #52 Worldwide (2024). VP Marketing, Happay: 161% ARR growth. 2x exit: to CRED ($180M+), then MakeMyTrip. VP Performance Marketing, Locus: $4.2M pipeline. Acquired by IKEA (Ingka Group) in Oct 2025.
+Shashwat Ghosh is a Fractional CMO and GTM Expert with 24+ years in B2B and 10+ years of fractional experience. Creator of the EPIC, IMPACT, and CRAFT frameworks. LinkedIn Top Product Marketing Voice, #10 India and #52 Worldwide (2024). VP Marketing, Happay: 161% ARR growth. 2x exit: to CRED ($180M), then MakeMyTrip. VP Global Performance Marketing, Locus: $4.2M pipeline. Acquired by IKEA (Ingka Group) in Oct 2025.
 
 - LinkedIn: [linkedin.com/in/shashwatghosh-ai-b2b-gtm-fractionalcmo](https://www.linkedin.com/in/shashwatghosh-ai-b2b-gtm-fractionalcmo/)
 - Website: [gtmhelix.com/about](https://gtmhelix.com/about/)

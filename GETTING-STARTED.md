@@ -20,6 +20,12 @@ You should see: Anchor Market analysis (sub-category vs. category vs. new catego
 
 You should see: A CRAFT audit identifying which elements are missing (Character, Result, Artifact, Frame, Timeline), a rewritten prompt with all 5 elements, and the before/after quality difference explained.
 
+### Test 4: Deal review and close plan
+
+"Review my deal: proposal stage 26 days, champion confirmed, the CFO named but not engaged, an incumbent in place. Close by 27 November."
+
+You should see: A deal health score with every point shown and labelled as an example default you can change, the risks ranked, dated next actions, and a mutual close plan on a working day calendar. The other Deal Execution skills answer requests such as "MEDDPICC questions for my next call", "they asked for 20% off" or "a four email cold sequence".
+
 ## Tips
 
 Name your company, stage, and industry. Generic questions produce generic answers. The more context you give, the more specific the scoring and recommendations.

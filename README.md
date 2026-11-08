@@ -2,6 +2,8 @@
 
 **Decide which go-to-market motion should lead, which category to own and what your core message is.** Three Claude skills for B2B founders, CMOs and product marketers, built on Shashwat Ghosh's IMPACT, EPIC and CRAFT methods. You give them your product, buyers, stage and market; you get the four motions scored with the one that should lead, a positioning and three level message hierarchy, and, with the third skill, vague AI prompts turned into specific ones.
 
+The plugin also includes the four skills of B2B Deal Execution, for account executives, founders who sell, sales engineers and sales leaders. They help you decide whether a live deal is on track, what to ask on the next call, who else must be in the deal, what to concede on price and what to send next. You give them your own deal facts; you get a deal health score, a close plan, discovery questions, a buying group map, concession costs, a champion asset or an email sequence. The same four skills are also published on their own: https://github.com/shashwatgtm/b2b-deal-execution
+
 This plugin runs in Claude Code and Claude Cowork. The same skills are also bundled in the Helix GTM Suite for Gemini CLI and Antigravity: https://github.com/shashwatgtm/helix-gtm-suite
 
 Plugin page with install steps for Claude Code and Cowork, and real example outputs from each skill: https://tools.gtmhelix.com/plugins/gtm-skills/
@@ -14,11 +16,11 @@ Created by [Shashwat Ghosh](https://www.linkedin.com/in/shashwatghosh-ai-b2b-gtm
 
 EPIC, IMPACT and CRAFT are Shashwat Ghosh's original frameworks; they are not part of Claude's built-in skills.
 
-The community marketplaces have generic GTM skills, but [Anthropic explicitly recommends](https://support.claude.com/en/articles/12512176-what-are-skills) using skills only from trusted sources. These 3 skills are built on original frameworks by a practitioner with verified results at companies that got acquired. They contain zero executable code. Pure strategic reasoning you can audit in 5 minutes.
+The community marketplaces have generic GTM skills, but [Anthropic explicitly recommends](https://support.claude.com/en/articles/12512176-what-are-skills) using skills only from trusted sources. The 3 strategy skills are built on original frameworks by a practitioner with verified results at companies that got acquired. They contain no executable code: strategic reasoning you can audit in 5 minutes. The 4 Deal Execution skills add small Python scripts for the parts that must be exact (see Security below).
 
 ---
 
-## The 3 Skills
+## The 7 Skills
 
 ### 1. GTM motion picker (EPIC)
 **File:** `gtm-motion-picker/SKILL.md`
@@ -47,6 +49,19 @@ Structure any AI prompt for consistently high-quality outputs using the CRAFT me
 
 **Includes:** Five-element framework with strong/weak examples, three complete B2B use cases (GTM strategy, battle card, investor update), common mistakes CRAFT prevents.
 
+### 4 to 7. Deal Execution
+**Files:** `deal-review-and-close-plan/`, `discovery-and-buying-group/`, `negotiation-and-champion/`, `sales-sequences/`
+
+**deal-review-and-close-plan** scores the health of one deal from your facts (champion, economic buyer, days in stage, competitors, blockers) by script, with every point shown and labelled, ranks the risks, checks the stage against its exit evidence, and gives dated next actions. It builds the mutual close plan with the buyer on a working day calendar and the 30, 60 and 90 day account plan.
+
+**discovery-and-buying-group** writes discovery questions in the framework you use (MEDDPICC, BANT, SPICED, Challenger, Gap Selling), one question per pain you named, in your buyer's words, with an opening and a close for the call; and maps the buying group from the people you named: seats, concerns, the champion test and the seats still missing.
+
+**negotiation-and-champion** helps you hold the price in a new deal. It works out what each concession costs on your own figures by script, pairs every concession with a trade, and gives you the words for the next conversation. It also writes your champion's internal asset in the champion's own voice (an email to their CFO, a memo, talking points) with one decision requested.
+
+**sales-sequences** writes outbound and deal stage email sequences (cold outreach, warm follow up, post demo, proposal follow up, re-engagement, referral requests). Send days come from a script as example defaults, and your own days and number of emails always win; every claim appears once with its source.
+
+Every Deal Execution skill keeps your figures exactly as you typed them, labels every number a script uses as an example default you can change, and never invents a buyer fact, a statistic or a competitor detail.
+
 ---
 
 ## How the Skills Work Together
@@ -65,7 +80,7 @@ CRAFT structures the AI      →  "Here is how to brief Claude on any GTM task g
 
 1. Go to **claude.ai** → **Settings** → **Skills**
 2. Click **Upload custom skill**
-3. Upload each `SKILL.md` file (one at a time)
+3. Upload each `SKILL.md` file (one at a time). For the 4 Deal Execution skills, upload the whole skill folder as a ZIP so its `references/` and `scripts/` files come with it
 4. Claude will automatically use the relevant skill when you ask GTM-related questions
 
 ### Option B: Claude Code (for developers)
@@ -118,7 +133,7 @@ These skills are the free diagnostic layer. Here is how they connect to deeper t
 
 | Layer | What | Where |
 |-------|------|-------|
-| **Free** (this repo) | 3 Claude Skills (diagnostic frameworks) | You are here |
+| **Free** (this repo) | 7 Claude Skills (3 diagnostic frameworks and 4 Deal Execution skills) | You are here |
 | **Free** | 50 CRAFT templates (Notion Marketplace) | [notion.com/templates](https://www.notion.com/templates/ai-context-engineering-craft-framework) |
 | **Free** | GTM Alpha scored report | [GTM Alpha](https://shashwatgtm.github.io/gtm-alpha-consultation/) |
 | **Self-serve** | 6 MCP servers (tool-grade execution) | [@shashwatgtmalpha on NPM](https://www.npmjs.com/~shashwatgtmalpha) |
@@ -138,7 +153,7 @@ These skills are the free diagnostic layer. Here is how they connect to deeper t
 
 ## Security
 
-The skills are markdown instruction files plus one small Python script each (the claim ledger). They make no API call and send no data anywhere. You can read every word before installing. They follow the [Agent Skills open standard](https://agentskills.io) published by Anthropic.
+The 3 strategy skills are markdown instruction files with no code. The 4 Deal Execution skills add small Python scripts (standard library only) for the parts that must be exact: deal_health.py, close_plan.py, concession_math.py and sequence_days.py. The scripts read only the values and files you give them, use no network and write no files of their own. Nothing is sent, scheduled or written to a CRM. You can read every word before installing. They follow the [Agent Skills open standard](https://agentskills.io) published by Anthropic.
 
 To report a security problem, email shashwat@gtmhelix.com with the subject "Security report: gtm-skills". Please do not open a public issue for it. The plugin sends no data anywhere.
 

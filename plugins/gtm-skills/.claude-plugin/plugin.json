@@ -1,8 +1,8 @@
 {
   "name": "gtm-skills",
   "displayName": "Positioning and GTM Strategy",
-  "version": "1.2.6",
-  "description": "For B2B founders, CMOs and product marketers: decide which go-to-market motion should lead (product-led, sales-led, partner or community), which category to own and what your core message is. Give it your product, buyers, stage and market; get the four motions scored, a positioning and message hierarchy, and vague AI prompts made specific. Built on Helix's IMPACT, EPIC and CRAFT methods.",
+  "version": "1.2.7",
+  "description": "For B2B founders, CMOs, product marketers and sellers: decide which go-to-market motion should lead (product-led, sales-led, partner or community), which category to own, what your core message is, and whether a live deal is on track and what to do next. Give it your product, buyers, stage and market, or your own deal facts; get the four motions scored, a positioning and message hierarchy, vague AI prompts made specific, and, from the four Deal Execution skills, a deal health score, a close plan, discovery questions, a buying group map, concession costs and deal stage email sequences. Built on Helix's IMPACT, EPIC and CRAFT methods.",
   "author": {
     "name": "Shashwat Ghosh",
     "url": "https://gtmhelix.com/about/"
@@ -23,6 +23,12 @@
     "gtm-strategy",
     "product-led-growth",
     "product-marketing",
-    "prompt-engineering"
+    "prompt-engineering",
+    "deal-review",
+    "close-plan",
+    "discovery",
+    "buying-group",
+    "negotiation",
+    "email-sequence"
   ]
 }

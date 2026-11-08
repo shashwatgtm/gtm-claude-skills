@@ -52,15 +52,15 @@ Structure any AI prompt for consistently high-quality outputs using the CRAFT me
 ### 4 to 7. Deal Execution
 **Files:** `deal-review-and-close-plan/`, `discovery-and-buying-group/`, `negotiation-and-champion/`, `sales-sequences/`
 
-**deal-review-and-close-plan** scores the health of one deal from your facts (champion, economic buyer, days in stage, competitors, blockers) by script, with every point shown and labelled, ranks the risks, checks the stage against its exit evidence, and gives dated next actions. It builds the mutual close plan with the buyer on a working day calendar and the 30, 60 and 90 day account plan.
+**deal-review-and-close-plan** scores the health of one deal from your facts (champion, economic buyer, days in stage, competitors, blockers) by a fixed method, with every point shown and labelled, ranks the risks, checks the stage against its exit evidence, and gives dated next actions. It builds the mutual close plan with the buyer on a working day calendar and the 30, 60 and 90 day account plan.
 
 **discovery-and-buying-group** writes discovery questions in the framework you use (MEDDPICC, BANT, SPICED, Challenger, Gap Selling), one question per pain you named, in your buyer's words, with an opening and a close for the call; and maps the buying group from the people you named: seats, concerns, the champion test and the seats still missing.
 
-**negotiation-and-champion** helps you hold the price in a new deal. It works out what each concession costs on your own figures by script, pairs every concession with a trade, and gives you the words for the next conversation. It also writes your champion's internal asset in the champion's own voice (an email to their CFO, a memo, talking points) with one decision requested.
+**negotiation-and-champion** helps you hold the price in a new deal. It works out what each concession costs on your own figures by a fixed method, pairs every concession with a trade, and gives you the words for the next conversation. It also writes your champion's internal asset in the champion's own voice (an email to their CFO, a memo, talking points) with one decision requested.
 
-**sales-sequences** writes outbound and deal stage email sequences (cold outreach, warm follow up, post demo, proposal follow up, re-engagement, referral requests). Send days come from a script as example defaults, and your own days and number of emails always win; every claim appears once with its source.
+**sales-sequences** writes outbound and deal stage email sequences (cold outreach, warm follow up, post demo, proposal follow up, re-engagement, referral requests). Send days come from a fixed method as example defaults, and your own days and number of emails always win; every claim appears once with its source.
 
-Every Deal Execution skill keeps your figures exactly as you typed them, labels every number a script uses as an example default you can change, and never invents a buyer fact, a statistic or a competitor detail.
+Every Deal Execution skill keeps your figures exactly as you typed them, labels every number the method supplies as an example default you can change, and never invents a buyer fact, a statistic or a competitor detail.
 
 ---
 
@@ -80,7 +80,7 @@ CRAFT structures the AI      →  "Here is how to brief Claude on any GTM task g
 
 1. Go to **claude.ai** → **Settings** → **Skills**
 2. Click **Upload custom skill**
-3. Upload each `SKILL.md` file (one at a time). For the 4 Deal Execution skills, upload the whole skill folder as a ZIP so its `references/` and `scripts/` files come with it
+3. Upload each `SKILL.md` file (one at a time). For the 4 Deal Execution skills, upload the whole skill folder as a ZIP so its `references/` files come with it
 4. Claude will automatically use the relevant skill when you ask GTM-related questions
 
 ### Option B: Claude Code (for developers)
@@ -153,7 +153,7 @@ These skills are the free diagnostic layer. Here is how they connect to deeper t
 
 ## Security
 
-The 3 strategy skills are markdown instruction files with no code. The 4 Deal Execution skills add small Python scripts (standard library only) for the parts that must be exact: deal_health.py, close_plan.py, concession_math.py and sequence_days.py. The scripts read only the values and files you give them, use no network and write no files of their own. Nothing is sent, scheduled or written to a CRM. You can read every word before installing. They follow the [Agent Skills open standard](https://agentskills.io) published by Anthropic.
+All 7 skills are Markdown instruction files with no code. The parts of the 4 Deal Execution skills that must be exact (the deal health score, close plan dates, discount maths and send days) are written as step by step methods in each skill's `references/` folder, which Claude follows with your figures. Nothing is sent, scheduled or written to a CRM. You can read every word before installing. They follow the [Agent Skills open standard](https://agentskills.io) published by Anthropic.
 
 To report a security problem, email shashwat@gtmhelix.com with the subject "Security report: gtm-skills". Please do not open a public issue for it. The plugin sends no data anywhere.
 

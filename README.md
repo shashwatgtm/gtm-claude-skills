@@ -1,4 +1,4 @@
-# Positioning and GTM Strategy
+# Positioning, GTM and Deal Strategy
 
 **Decide which go-to-market motion should lead, which category to own and what your core message is.** Three Claude skills for B2B founders, CMOs and product marketers, built on Shashwat Ghosh's IMPACT, EPIC and CRAFT methods. You give them your product, buyers, stage and market; you get the four motions scored with the one that should lead, a positioning and three level message hierarchy, and, with the third skill, vague AI prompts turned into specific ones.
 

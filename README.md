@@ -1,5 +1,7 @@
 # Positioning, GTM and Deal Strategy
 
+By Helix GTM Consulting (https://gtmhelix.com), built by Shashwat Ghosh, Co-Founder and Fractional CMO.
+
 **Decide which go-to-market motion should lead, which category to own and what your core message is.** Three Claude skills for B2B founders, CMOs and product marketers, built on Shashwat Ghosh's IMPACT, EPIC and CRAFT methods. You give them your product, buyers, stage and market; you get the four motions scored with the one that should lead, a positioning and three level message hierarchy, and, with the third skill, vague AI prompts turned into specific ones.
 
 The plugin also includes the four skills of B2B Deal Execution, for account executives, founders who sell, sales engineers and sales leaders. They help you decide whether a live deal is on track, what to ask on the next call, who else must be in the deal, what to concede on price and what to send next. You give them your own deal facts; you get a deal health score, a close plan, discovery questions, a buying group map, concession costs, a champion asset or an email sequence. The same four skills are also published on their own: https://github.com/shashwatgtm/b2b-deal-execution
